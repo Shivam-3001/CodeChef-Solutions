@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int x, p, q;
+	    cin>>x>>p>>q;
+	    int tickets=p-q;
+	    cout<<x*tickets<<endl;
+	}
+	return 0;
+}
