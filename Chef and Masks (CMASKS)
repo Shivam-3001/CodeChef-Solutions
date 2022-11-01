@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int x, y;
+	    cin>>x>>y;
+	    int disposable=x*100;
+	    int cloth=y*10;
+	    if(disposable>=cloth)
+	        cout<<"Cloth"<<endl;
+	    else
+	        cout<<"disposable"<<endl;
+	}
+	return 0;
+}
