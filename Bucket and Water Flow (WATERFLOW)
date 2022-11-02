@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int w, x, y, z;
+	    cin>>w>>x>>y>>z;
+	    int water=z*y;
+	    int left=x-w;
+	    if(water>left)
+	        cout<<"Overflow"<<endl;
+	    else if(water==left)
+	        cout<<"Filled"<<endl;
+	    else
+	        cout<<"Unfilled"<<endl;
+	}
+	return 0;
+}
