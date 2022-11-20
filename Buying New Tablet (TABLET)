@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+#include<vector>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n, b;
+	    cin>>n>>b;
+	    vector<pair<int, int>> v;
+	    int w[n], h[n], p[n];
+	    for(int i=0; i<n; i++){
+	        cin>>w[i]>>h[i]>>p[i];
+	    }
+	    for(int i=0; i<n; i++){
+	        if(p[i]>b)  continue;
+	        int temp=w[i]*h[i];
+	        v.push_back({temp, p[i]});
+	    }
+	    int a=v.size();
+	    if(a==0) cout<<"no tablet"<<endl;
+	    else{
+	        sort(v.begin(), v.end());
+	        cout<<v[a-1].first<<endl;
+	    }
+	}
+	return 0;
+}
